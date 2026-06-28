@@ -1,0 +1,87 @@
+@import "@fontsource-variable/outfit/wght.css";
+
+:root {
+  /* colors */
+  --white: hsl(0, 0%, 100%);
+  --slate-300: hsl(212, 45%, 89%);
+  --slate-500: hsl(216, 15%, 48%);
+  --slate-900: hsl(218, 44%, 22%);
+
+  --base-font-size: 15px;
+  --font-sans-serif: "Outfit Variable", sans-serif;
+
+  --fw-regular: 400;
+  --fw-bold: 700;
+
+  --spacing-200: 16px;
+  --spacing-300: 24px;
+  --spacing-500: 40px;
+
+  --br-sm: 10px;
+  --br-lg: 20px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  font-family: var(--font-sans-serif);
+  background-color: var(--slate-300);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding: var(--spacing-200);
+  margin: 0;
+  text-align: center;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex: 1;
+}
+
+img {
+  max-width: 100%;
+  border-radius: var(--br-sm);
+}
+
+h1,
+p,
+figure {
+  padding: 0;
+  margin: 0;
+}
+
+.qr-code {
+  max-width: 320px;
+  padding: var(--spacing-200);
+  padding-bottom: var(--spacing-500);
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-300);
+  border-radius: var(--br-lg);
+}
+
+.text-preset-1 {
+  font-weight: var(--fw-bold);
+  font-size: 22px;
+  line-height: 1.2;
+  letter-spacing: 0px;
+}
+
+.text-preset-2 {
+  font-size: var(--base-font-size);
+  line-height: 1.4;
+  letter-spacing: 0.2px;
+}

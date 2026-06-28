@@ -1,11 +1,36 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import Layout from "../layouts/Layout.astro";
+import QrCode from "../assets/image-qr-code.png";
+import "../styles/global.css";
 ---
 
 <Layout>
-	<Welcome />
+  <main>
+    <figure class="qr-code">
+      <img src={QrCode.src} />
+      <h1 class="text-preset-1">
+        Improve your front-end skills by building projects
+      </h1>
+      <p class="text-preset-2">
+        Scan the QR code to visit Frontend Mentor and take your coding skills to
+        the next level
+      </p>
+    </figure>
+  </main>
+
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge"
+      >Frontend Mentor</a
+    >. Coded by <a href="#">Shmuel Toporowitch</a>.
+  </footer>
 </Layout>
+
+<style>
+  .attribution {
+    font-size: 0.6875rem;
+    text-align: center;
+  }
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+</style>
