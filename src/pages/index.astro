@@ -6,23 +6,20 @@ import "../styles/global.css";
 
 <Layout>
   <main>
-    <figure class="qr-code">
-      <img src={QrCode.src} />
-      <h1 class="text-preset-1">
-        Improve your front-end skills by building projects
-      </h1>
-      <p class="text-preset-2">
-        Scan the QR code to visit Frontend Mentor and take your coding skills to
-        the next level
-      </p>
-    </figure>
-  </main>
+    <section class="qr-code" aria-labelledby="qr-code-title">
+      <img src={QrCode.src} alt="QR code linking to Frontend Mentor" />
+      <div class="qr-code-text">
+        <h1 id="qr-code-title" class="text-preset-1">
+          Improve your front-end skills by building projects
+        </h1>
 
-  <footer class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge"
-      >Frontend Mentor</a
-    >. Coded by <a href="#">Shmuel Toporowitch</a>.
-  </footer>
+        <p class="text-preset-2">
+          Scan the QR code to visit Frontend Mentor and take your coding skills
+          to the next level
+        </p>
+      </div>
+    </section>
+  </main>
 </Layout>
 
 <style>
